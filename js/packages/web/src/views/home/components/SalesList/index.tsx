@@ -22,7 +22,7 @@ export enum LiveAuctionViewState {
 }
 
 const breakpointColumnsObj = {
-  default: 4,
+  default: 5,
   1100: 3,
   700: 2,
   500: 1,
@@ -39,7 +39,7 @@ export const SalesListView = () => {
      
       <Layout>
         <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
-          <Col style={{ width: '100%', marginTop: 32 }}>
+          <Col style={{ width: '100%', marginTop: 1 }}>
             <Row>
               <Tabs
                 activeKey={activeKey}
@@ -59,7 +59,6 @@ export const SalesListView = () => {
                     key={LiveAuctionViewState.Resale}
                   ></TabPane>
                 )}
-                <TabPane tab="Ended" key={LiveAuctionViewState.Ended}></TabPane>
                 {connected && (
                   <TabPane
                     tab="Participated"
