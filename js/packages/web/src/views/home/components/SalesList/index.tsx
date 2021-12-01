@@ -36,13 +36,7 @@ export const SalesListView = () => {
 
   return (
     <>
-      <Banner
-        src="/main-banner.png"
-        headingText="Great Legendary $GREAT"
-        subHeadingText="¡Compra tu cofre, se parte del juego!"
-        actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
-        useBannerBg
-      />
+     
       <Layout>
         <Content style={{ display: 'flex', flexWrap: 'wrap' }}>
           <Col style={{ width: '100%', marginTop: 32 }}>
@@ -89,6 +83,13 @@ export const SalesListView = () => {
           </Col>
         </Content>
       </Layout>
+      <Banner
+        src="/main-banner.png"
+        headingText="Great Legendary $GREAT"
+        subHeadingText="¡Compra tu cofre, se parte del juego!"
+        actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
+        useBannerBg
+      />
     </>
   );
 };
