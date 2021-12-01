@@ -20,10 +20,10 @@ const getDefaultLinkActions = (connected: boolean) => {
       <Button className="app-btn">Explore</Button>
     </HashQueryLink>,
     <HashQueryLink to={`/artworks`} key={'artwork'}>
-      <Button className="app-btn">{connected ? 'My items' :'Artworks'}</Button>
+      <Button className="app-btn disable">{connected ? 'My items' :'Artworks'}</Button>
     </HashQueryLink>,
     <HashQueryLink to={`/artists`} key={'artists'}>
-      <Button className="app-btn">Creators</Button>
+      <Button className="app-btn disable">Creators</Button>
     </HashQueryLink>
   ];
 };

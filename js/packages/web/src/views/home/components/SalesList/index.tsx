@@ -37,7 +37,7 @@ export const SalesListView = () => {
   return (
     <>
       <Banner
-        src="/main-banner.svg"
+        src="/main-banner.png"
         headingText="Great Legendary $GREAT"
         subHeadingText="¡Compra tu cofre, se parte del juego!"
         actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}

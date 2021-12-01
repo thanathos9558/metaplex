@@ -311,7 +311,6 @@ export const CurrentUserBadge = (props: {
                     Disconnect
                   </Button>
                 </div>
-                <UserActions />
               </div>
             }
           />
@@ -507,12 +506,6 @@ export const CurrentUserBadgeMobile = (props: {
         </Button>
       </div>
       <div className="actions-buttons">
-        <UserActions
-          mobile
-          onClick={() => {
-            props.closeModal ? props.closeModal() : null;
-          }}
-        />
       </div>
       <AddFundsModal
         setShowAddFundsModal={setShowAddFundsModal}
